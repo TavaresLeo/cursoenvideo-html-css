@@ -9,44 +9,72 @@
 </head>
 <body>
     <style>
-        h1 {
-            margin-top: 100px;
-            text-align: center;
-            font-size: 60px;
-        }
-
-        .thumb, .thumb-2 {
-            margin-top: 100px;
-            margin-left: 400px;
-            align-items: center;
-            text-align: center;
-            display: inline-block;
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1980px;
+    
         }
         
-        .thumb-2 {
-            margin-left: -0.1px;
+        h1 {
             
+            font-size: 4.5em,px;
+            text-align:center;  
+            color:rgb(42, 9, 131)
+
+        }
+        .container {
+            width: 80%;
+        }
+        .bloco {
+            float: left;
+            width: 100%;
+            height: 300px;
+            margin-left: 15%;
+            background-color: #666;
+            margin-bottom: 40px;
+        }
+        @media screen and (min-width: 769px){
+            .bloco {
+                float: left;
+                width: 30%;
+                height: 300px;
+                margin-left: 0%;
+                margin-right: 3%;
+                background-color: #666;
+                margin-bottom: 20px;
+            }
+            
+            h1{
+                font-size: 60px;
+            }
         }
     </style>
-
-    <h1>Cursos Legais para assistir</h1>
-    <div class="thumb">
-        <div class="conteiner-1">
-            <a href="hardware.html"><img src="imagens/thumb-hardware.jpg" alt="curso thumb-hardware" width="700"></a>
+    <header>
+        <h1>Cursos Legais para assistir</h1>
+    </header>
+    <div class="container">
+        <div class="bloco">
+            <a href="hardware.html"><img src="imagens/thumb-hardware.jpg" alt="curso thumb-hardware" width="100%" height="300px"></a>
         </div>
 
-        <div class="conteiner-2">
-            <a href="html-css.html"><img src= "imagens/thumb-html.jpg" alt="curso HTML e CSS"  width="700"></a>
+        <div class="bloco">
+            <a href="html-css.html"><img src= "imagens/thumb-html.jpg" alt="curso HTML e CSS"  width="100%" height="300px"></a>
         </div>
+        <div class="bloco">
+            <a href="js.html"><img src="imagens/thumb-js.jpg" alt="curso de JavaScript"  width="100%" height="300px"></a>
+        </div>
+        <div class="bloco">
+            <a href="python.html"><img src="imagens/thumb-python.jpg" alt="curso de python"  width="100%" height="300px"></a>
+        </div>
+        <div class="bloco">
+            <a href="php.html"><img src="imagens/imagem-php.jpg" alt="curso php" width="100%" height="300px"></a>
+        </div>  
+        <div class="bloco">
+            <a href="github.html"><img src="imagens/git-github.jpg" alt="curso git-github" width="100%" height="300px"></a>
+        </div>  
+
     </div>
-    <div class="thumb-2">
-        <div class="conteiner-3">
-            <a href="js.html"><img src="imagens/thumb-js.jpg" alt="curso de JavaScript"  width="700"></a>
-        </div>
-
-       <div class="conteiner-4">
-            <a href="python.html"><img src="imagens/thumb-python.jpg" alt="curso de python"  width="700"></a>
-       </div>
-          
-    </div>
+      
+</body>    
+    
 </html>
